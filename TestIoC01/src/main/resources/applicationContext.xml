@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+    User user1 = new User();
+    -->
+    <bean id="user1" class="com.jiangjf.bean.User" lazy-init="true">
+    </bean>
+
+    <!--
+    User user2 = new User();
+    user2.setUserid(2);
+    -->
+    <bean id="user2" class="com.jiangjf.bean.User">
+        <property name="userid" value="2"></property>
+        <property name="username" value="张三"></property>
+        <property name="password" value="123456"></property>
+    </bean>
+
+    <!--
+    User user3 = new User(3, "", "");
+    -->
+    <bean id="user3" class="com.jiangjf.bean.User">
+        <constructor-arg name="userid" value="3"></constructor-arg>
+        <constructor-arg name="username" value="王五"></constructor-arg>
+        <constructor-arg name="password" value="123456"></constructor-arg>
+    </bean>
+    <bean id="user4" class="com.jiangjf.bean.User">
+        <constructor-arg index="0" value="4"></constructor-arg>
+        <constructor-arg index="1" value="王五4"></constructor-arg>
+        <constructor-arg index="2" value="123456"></constructor-arg>
+    </bean>
+
+    <!--
+    通过p名称空间和c名称空间实现DI
+    xmlns:p="http://www.springframework.org/schema/p" 对应 property
+    xmlns:c="http://www.springframework.org/schema/c" 对应 constructor
+    -->
+    <bean id="user5" class="com.jiangjf.bean.User" p:userid="5" p:username="5" p:password="5555"></bean>
+    <bean id="user6" class="com.jiangjf.bean.User" c:userid="6" c:username="6" c:password="66666"></bean>
+
+</beans>

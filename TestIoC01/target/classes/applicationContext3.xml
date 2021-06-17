@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="birthdate1" class="java.util.Date"></bean>
+
+    <bean id="mouse1" class="com.jiangjf.bean.Mouse">
+        <property name="name" value="Jerry"></property>
+        <property name="birthdate" ref="birthdate1"></property>
+    </bean>
+
+    <bean id="cat1" class="com.jiangjf.bean.Cat">
+        <property name="name" value="Tom"></property>
+        <!--ref引用方式-->
+        <!--<property name="mouse1" ref="mouse1"></property>-->
+        <!--级联方式-->
+        <property name="mouse1">
+            <bean class="com.jiangjf.bean.Mouse">
+                <property name="name" value="Jerry2"></property>
+                <property name="birthdate">
+                    <bean class="java.util.Date"></bean>
+                </property>
+            </bean>
+        </property>
+    </bean>
+    
+</beans>

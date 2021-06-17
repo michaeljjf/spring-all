@@ -1,0 +1,8 @@
+com\jiangjf\controller\UserController.class
+com\jiangjf\dao\impl\UserDaoImplB.class
+com\jiangjf\bean\User.class
+com\jiangjf\dao\UserDao.class
+com\jiangjf\service\UserService.class
+com\jiangjf\service\impl\UserServiceImpl.class
+com\jiangjf\bean\Student.class
+com\jiangjf\dao\impl\UserDaoImplA.class
