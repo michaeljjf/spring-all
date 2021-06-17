@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="TestAop01" />
+        <module name="TestJdbcTemplate" />
         <module name="TestAop02" />
         <module name="TestIoC01" />
         <module name="Test01" />
