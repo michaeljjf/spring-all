@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Component
 public class Dept {
     private Integer deptno;
     private String dname;
