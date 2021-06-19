@@ -1,7 +1,6 @@
 package com.jjf.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -46,7 +45,7 @@ public class SpringConfig {
     }
 
     /**
-     * DataSource参数，Spring会自动从容器中查找有没有，有就自动注入进来
+     * DataSource参数，Spring会自动从容器中查找有没有，有就自动注入进来（就是上面方法的DruidDataSource）
      *
      * @param dataSource
      * @return
