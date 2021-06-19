@@ -10,7 +10,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Test01 {
     @Test
     public void testTransMoney() {
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext1.xml");
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
         AccountService accountService = applicationContext.getBean(AccountService.class);
         int rows = accountService.transMoney(1, 2, 100);
         System.out.println(rows);
