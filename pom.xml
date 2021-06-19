@@ -15,6 +15,7 @@
         <module>TestAop01</module>
         <module>TestAop02</module>
         <module>TestJdbcTemplate</module>
+        <module>TestTx</module>
     </modules>
 
     <properties>

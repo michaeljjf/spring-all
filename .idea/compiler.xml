@@ -10,6 +10,7 @@
         <module name="TestAop01" />
         <module name="TestJdbcTemplate" />
         <module name="TestAop02" />
+        <module name="TestTx" />
         <module name="TestIoC01" />
         <module name="Test01" />
         <module name="TestIoC02" />
