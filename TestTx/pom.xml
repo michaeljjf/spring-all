@@ -86,6 +86,25 @@
             <version>4.13.1</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- junit 5 -->
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.7.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Spring 测试支持包，让单元测试更简单 -->
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>5.3.3</version>
+            <scope>test</scope>
+        </dependency>
+
         <!--lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>

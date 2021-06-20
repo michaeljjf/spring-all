@@ -12,11 +12,12 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
-
+// 测试 SpringJUnit4ClassRunner，见com/jjf/test/TestTx.java:12
+/*
 @Configuration// 配置类注解
 @ComponentScan(basePackages = "com.jjf")// Spring包扫描
 @PropertySource(value = "classpath:jdbc.properties")// 读取属性配置文件
-@EnableTransactionManagement// 开启事务注解
+@EnableTransactionManagement// 开启事务注解 */
 public class SpringConfig {
 
     // 从配置中取值
